@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Pencil, Trash2, FolderOpen, Tags } from "lucide-react";
 import "./Categories.css";
 
-const API_URL = "http://localhost:5000/api/admin/categories";
+const API_URL = "http://https://shopnexa-backend-wjk6.onrender.com/api/admin/categories";
 
 function Categories() {
   const [categories, setCategories] = useState([]);

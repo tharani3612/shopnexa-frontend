@@ -19,7 +19,7 @@ import {
 
 import "./OrderDetails.css";
 
-const API_URL = "http://localhost:5000/api/admin/orders";
+const API_URL = "http://https://shopnexa-backend-wjk6.onrender.com/api/admin/orders";
 
 function OrderDetails() {
   const { id } = useParams();

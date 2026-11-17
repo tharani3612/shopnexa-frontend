@@ -16,8 +16,8 @@ import {
 
 import "./Products.css";
 
-const API_URL = "http://localhost:5000/api/admin/products";
-const CATEGORY_API = "http://localhost:5000/api/admin/categories";
+const API_URL = "http://https://shopnexa-backend-wjk6.onrender.com/api/admin/products";
+const CATEGORY_API = "http://https://shopnexa-backend-wjk6.onrender.com/api/admin/categories";
 
 // PAGE ANIMATION
 const pageVariants = {

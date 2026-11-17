@@ -19,7 +19,7 @@ import {
 
 import "./Customers.css";
 
-const API_URL = "http://https://shopnexa-backend-wjk6.onrender.com/api/admin/customers";
+const API_URL = "https://shopnexa-backend-wjk6.onrender.com/api/admin/customers";
 
 function Customers() {
   const [customers, setCustomers] = useState([]);

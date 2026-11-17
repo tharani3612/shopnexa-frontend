@@ -17,7 +17,7 @@ import {
 
 import "./Orders.css";
 
-const API_URL = "http://https://shopnexa-backend-wjk6.onrender.com/api/admin/orders";
+const API_URL = "https://shopnexa-backend-wjk6.onrender.com/api/admin/orders";
 
 // ======================================
 // HELPERS

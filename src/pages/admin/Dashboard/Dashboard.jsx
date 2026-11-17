@@ -233,7 +233,7 @@ function Dashboard() {
         }
 
         const response = await fetch(
-          "http://https://shopnexa-backend-wjk6.onrender.com/api/admin/dashboard",
+          "https://shopnexa-backend-wjk6.onrender.com/api/admin/dashboard",
           {
             method: "GET",
             headers: {

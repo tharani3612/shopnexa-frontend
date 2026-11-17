@@ -13,8 +13,8 @@ import {
 } from "lucide-react";
 import "./AddProduct.css";
 
-const CATEGORY_API = "http://https://shopnexa-backend-wjk6.onrender.com/api/admin/categories";
-const PRODUCT_API = "http://https://shopnexa-backend-wjk6.onrender.com/api/admin/products";
+const CATEGORY_API = "https://shopnexa-backend-wjk6.onrender.com/api/admin/categories";
+const PRODUCT_API = "https://shopnexa-backend-wjk6.onrender.com/api/admin/products";
 
 function AddProduct() {
   const navigate = useNavigate();

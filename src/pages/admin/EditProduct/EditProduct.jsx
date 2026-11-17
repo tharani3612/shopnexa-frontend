@@ -15,7 +15,7 @@ import {
 
 import "./EditProduct.css";
 
-const API_URL = "http://https://shopnexa-backend-wjk6.onrender.com/api/admin/products";
+const API_URL = "https://shopnexa-backend-wjk6.onrender.com/api/admin/products";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 20 },

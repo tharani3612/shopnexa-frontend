@@ -29,7 +29,7 @@ import "./Reports.css";
 // HELPERS
 // ======================================
 
-const API_URL = "http://https://shopnexa-backend-wjk6.onrender.com/api/admin/reports";
+const API_URL = "https://shopnexa-backend-wjk6.onrender.com/api/admin/reports";
 
 const formatCurrency = (value) =>
   new Intl.NumberFormat("en-IN", {

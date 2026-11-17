@@ -1,0 +1,82 @@
+
+.refund-page {
+  background: #fffaf8;
+}
+
+.refund-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 38px;
+  background: #fff;
+  border: 1px solid #f0e5e0;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(41, 36, 42, 0.04);
+}
+
+.refund-intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 22px;
+  margin-bottom: 30px;
+  background: #f0fbf9;
+  border-radius: 10px;
+}
+
+.refund-intro svg {
+  color: #20a69c;
+  font-size: 30px;
+  flex-shrink: 0;
+}
+
+.refund-intro p {
+  margin: 0;
+  color: #51464d;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.refund-content section {
+  margin-bottom: 28px;
+}
+
+.refund-content h2 {
+  color: #29242a;
+  font-size: 18px;
+  margin: 0 0 12px;
+}
+
+.refund-content p,
+.refund-content li {
+  color: #82767d;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.refund-content ol {
+  padding-left: 22px;
+}
+
+.refund-content li {
+  margin-bottom: 7px;
+}
+
+.refund-content a {
+  color: #e33d5c;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 650px) {
+  .refund-content {
+    padding: 22px 18px;
+  }
+
+  .refund-intro {
+    padding: 16px;
+  }
+
+  .refund-content h2 {
+    font-size: 16px;
+  }
+}

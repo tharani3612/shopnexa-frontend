@@ -1,0 +1,171 @@
+
+/* =====================================
+   SHOPNEXA - GLOBAL CSS
+   File: src/index.css
+===================================== */
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  color: #202027;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Body */
+html {
+  width: 100%;
+  min-width: 320px;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  background: #ffffff;
+}
+
+/* React root */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Common elements */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+/* Prevent unwanted horizontal scrolling */
+main,
+section {
+  max-width: 100%;
+}
+
+/* ShopNexa marquee: prevent global animation overrides */
+.nexa-marquee {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.nexa-marquee-track {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  width: max-content !important;
+  max-width: none !important;
+  gap: 0 !important;
+
+  animation: nexa-auto-scroll 12s linear infinite !important;
+  animation-play-state: running !important;
+
+  will-change: transform;
+}
+
+.nexa-marquee-group {
+  display: flex !important;
+  flex: 0 0 auto !important;
+  flex-wrap: nowrap !important;
+  gap: 18px;
+  padding-right: 18px;
+}
+
+.nexa-look {
+  display: block;
+  flex: 0 0 270px;
+  width: 270px;
+}
+
+/* Continuous left movement */
+@keyframes nexa-auto-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .nexa-marquee-track {
+    animation-duration: 10s !important;
+  }
+
+  .nexa-marquee-group {
+    gap: 12px;
+    padding-right: 12px;
+  }
+
+  .nexa-look {
+    flex-basis: 215px;
+    width: 215px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .nexa-marquee-track {
+    animation-duration: 8s !important;
+  }
+
+  .nexa-look {
+    flex-basis: 175px;
+    width: 175px;
+  }
+}

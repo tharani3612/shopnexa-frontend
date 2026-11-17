@@ -1,0 +1,494 @@
+
+/* =========================================
+   SHOPNEXA - EDIT PRODUCT PAGE
+========================================= */
+
+.edit-product-page {
+  min-height: 100vh;
+  width: 100%;
+  padding: 32px;
+  background: #f6f7fb;
+  color: #252238;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  box-sizing: border-box;
+}
+
+.edit-product-page * {
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+.edit-product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 28px;
+  animation: editFadeDown 0.5s ease both;
+}
+
+.edit-product-header h1 {
+  margin: 18px 0 8px;
+  color: #252238;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.edit-product-header p {
+  margin: 0;
+  color: #89828f;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.back-products-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  width: fit-content;
+  padding: 10px 15px;
+  border: 1px solid #f0dce5;
+  border-radius: 8px;
+  background: #fff0f5;
+  color: #ff2670;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.25s ease;
+}
+
+.back-products-btn:hover {
+  background: #ff2670;
+  color: #ffffff;
+  border-color: #ff2670;
+  transform: translateX(-3px);
+}
+
+/* FORM CARD */
+
+.edit-product-form {
+  width: 100%;
+  max-width: 950px;
+  padding: 30px;
+  border: 1px solid #efebf1;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 4px 18px rgba(32, 25, 45, 0.04);
+  animation: editFadeUp 0.55s ease both;
+  transition: box-shadow 0.3s ease;
+}
+
+.edit-product-form:hover {
+  box-shadow: 0 10px 28px rgba(32, 25, 45, 0.065);
+}
+
+/* FORM HEADING */
+
+.edit-form-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 23px;
+  margin-bottom: 27px;
+  border-bottom: 1px solid #f0edf1;
+}
+
+.edit-form-heading-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #fff0f5;
+  color: #ff2670;
+  transition: transform 0.3s ease;
+}
+
+.edit-product-form:hover .edit-form-heading-icon {
+  transform: rotate(-6deg) scale(1.06);
+}
+
+.edit-form-heading h2 {
+  margin: 0;
+  color: #302b3d;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.edit-form-heading p {
+  margin: 6px 0 0;
+  color: #96909d;
+  font-size: 14px;
+}
+
+/* FORM GROUPS */
+
+.edit-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 23px;
+  flex: 1;
+  min-width: 0;
+}
+
+.edit-form-group label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #413b4b;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.edit-form-group label span {
+  color: #ff2670;
+}
+
+/* INPUT WRAPPER */
+
+.edit-input-wrapper {
+  width: 100%;
+  min-width: 0;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 0 14px;
+  border: 1px solid #e7e3ea;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #a19aa7;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.edit-input-wrapper:focus-within {
+  border-color: #ff7aa5;
+  box-shadow: 0 0 0 4px rgba(255, 38, 112, 0.09);
+  color: #ff4380;
+}
+
+.edit-input-wrapper input,
+.edit-input-wrapper select {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #343044;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.edit-input-wrapper input::placeholder {
+  color: #aaa3ae;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.edit-input-wrapper select {
+  cursor: pointer;
+}
+
+.edit-input-wrapper select option {
+  color: #343044;
+}
+
+/* ROW LAYOUT */
+
+.edit-form-row {
+  display: flex;
+  gap: 20px;
+}
+
+/* DESCRIPTION */
+
+.description-group {
+  margin-top: 3px;
+}
+
+.description-group label {
+  gap: 8px;
+}
+
+.description-group label svg {
+  color: #ff4380;
+}
+
+.edit-form-group textarea {
+  width: 100%;
+  min-height: 135px;
+  padding: 14px 16px;
+  border: 1px solid #e7e3ea;
+  border-radius: 9px;
+  outline: none;
+  background: #ffffff;
+  color: #343044;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1.7;
+  resize: vertical;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.edit-form-group textarea:focus {
+  border-color: #ff7aa5;
+  box-shadow: 0 0 0 4px rgba(255, 38, 112, 0.09);
+}
+
+.edit-form-group textarea::placeholder {
+  color: #aaa3ae;
+  font-size: 14px;
+}
+
+/* IMAGE PREVIEW */
+
+.edit-image-preview {
+  padding: 17px;
+  margin: 0 0 24px;
+  border: 1px solid #f0e8ed;
+  border-radius: 11px;
+  background: #fffafd;
+  animation: editFadeUp 0.35s ease both;
+}
+
+.edit-image-preview-heading {
+  margin-bottom: 13px;
+  color: #484253;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.edit-image-preview img {
+  display: block;
+  width: 180px;
+  height: 160px;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 9px;
+  background: #ffffff;
+  animation: editImageReveal 0.4s ease both;
+}
+
+/* ACTION BUTTONS */
+
+.edit-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 13px;
+  padding-top: 23px;
+  margin-top: 10px;
+  border-top: 1px solid #f0edf1;
+}
+
+.cancel-edit-btn,
+.update-product-btn {
+  min-height: 49px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 12px 23px;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.cancel-edit-btn {
+  border: 1px solid #e9e5eb;
+  background: #ffffff;
+  color: #77717f;
+}
+
+.cancel-edit-btn:hover {
+  background: #f7f5f8;
+  transform: translateY(-2px);
+}
+
+.update-product-btn {
+  border: none;
+  background: linear-gradient(135deg, #ff4380, #ed0758);
+  color: #ffffff;
+  box-shadow: 0 5px 14px rgba(255, 38, 112, 0.16);
+}
+
+.update-product-btn:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 9px 20px rgba(255, 38, 112, 0.25);
+}
+
+.update-product-btn:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.update-product-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* PRODUCT NOT FOUND */
+
+.not-found-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.not-found-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 25px;
+  border: 1px solid #efebf1;
+  border-radius: 15px;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0 4px 18px rgba(32, 25, 45, 0.04);
+  animation: editFadeUp 0.5s ease both;
+}
+
+.not-found-card > svg {
+  color: #ff4380;
+}
+
+.not-found-card h2 {
+  margin: 17px 0 8px;
+  color: #302b3d;
+  font-size: 23px;
+}
+
+.not-found-card p {
+  margin: 0 0 22px;
+  color: #89828f;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.not-found-card .back-products-btn {
+  margin: 0 auto;
+}
+
+/* ANIMATIONS */
+
+@keyframes editFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes editFadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes editImageReveal {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .edit-product-page {
+    padding: 24px;
+  }
+
+  .edit-product-form {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .edit-product-page {
+    padding: 18px;
+  }
+
+  .edit-product-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .edit-product-header h1 {
+    font-size: 28px;
+  }
+
+  .edit-product-form {
+    padding: 21px;
+  }
+
+  .edit-form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .edit-form-actions {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+
+  .cancel-edit-btn,
+  .update-product-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .edit-product-page {
+    padding: 13px;
+  }
+
+  .edit-product-form {
+    padding: 16px;
+  }
+
+  .edit-form-heading h2 {
+    font-size: 18px;
+  }
+
+  .edit-product-header h1 {
+    font-size: 25px;
+  }
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+  .edit-product-page *,
+  .edit-product-page *::before,
+  .edit-product-page *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

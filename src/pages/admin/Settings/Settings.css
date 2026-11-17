@@ -1,0 +1,362 @@
+
+/* =========================================
+   SHOPNEXA SETTINGS - PREMIUM PINK UI
+========================================= */
+
+.settings-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 12px 10px 30px;
+  background: #fff7fa;
+  color: #30242d;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.settings-page * {
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+.settings-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 22px;
+  animation: settingsSlide 0.5s ease both;
+}
+
+.settings-header h1 {
+  margin: 0 0 7px;
+  color: #30242d;
+  font-size: 29px;
+  font-weight: 800;
+}
+
+.settings-header p {
+  margin: 0;
+  color: #988a93;
+  font-size: 14px;
+}
+
+.settings-header-icon {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  color: #f72568;
+  background: #ffe5ef;
+  border-radius: 14px;
+  font-size: 23px;
+  transition: 0.3s ease;
+}
+
+.settings-header-icon:hover {
+  transform: rotate(12deg);
+}
+
+/* FORM */
+
+.settings-form {
+  width: 100%;
+  max-width: 950px;
+  animation: settingsFade 0.6s ease both;
+}
+
+/* CARD */
+
+.settings-card {
+  width: 100%;
+  padding: 25px;
+  background: #ffffff;
+  border: 1px solid #f3e5eb;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(50, 20, 35, 0.035);
+}
+
+/* CARD HEADING */
+
+.settings-card-heading {
+  padding-bottom: 19px;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #f3e8ed;
+}
+
+.settings-card-heading h2 {
+  margin: 0 0 7px;
+  color: #30242d;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.settings-card-heading p {
+  margin: 0;
+  color: #a0959d;
+  font-size: 13px;
+}
+
+/* GRID */
+
+.settings-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 20px;
+}
+
+.settings-field {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 9px;
+}
+
+.settings-field.full-width {
+  grid-column: 1 / -1;
+}
+
+/* LABEL */
+
+.settings-field label {
+  color: #51434c;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* INPUTS */
+
+.settings-field input,
+.settings-field select,
+.settings-field textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 13px 14px;
+  color: #30242d;
+  background: #fffafd;
+  border: 1px solid #eee0e7;
+  border-radius: 9px;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  transition: 0.25s ease;
+}
+
+.settings-field input,
+.settings-field select {
+  height: 46px;
+}
+
+.settings-field input::placeholder,
+.settings-field textarea::placeholder {
+  color: #b5a8b0;
+  font-size: 13px;
+}
+
+.settings-field input:hover,
+.settings-field select:hover,
+.settings-field textarea:hover {
+  border-color: #f5a5bf;
+}
+
+.settings-field input:focus,
+.settings-field select:focus,
+.settings-field textarea:focus {
+  background: #ffffff;
+  border-color: #f72568;
+  box-shadow: 0 0 0 3px rgba(247, 37, 104, 0.09);
+}
+
+.settings-field textarea {
+  min-height: 95px;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+.settings-field select {
+  cursor: pointer;
+}
+
+/* SUCCESS MESSAGE */
+
+.settings-message {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 14px 16px;
+  color: #16875c;
+  background: #e6f8ef;
+  border: 1px solid #c8efda;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  animation: settingsFade 0.3s ease both;
+}
+
+/* BUTTON CONTAINER */
+
+.settings-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.settings-actions button {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 0 20px;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.settings-actions button:hover {
+  transform: translateY(-2px);
+}
+
+.settings-actions button:active {
+  transform: scale(0.97);
+}
+
+/* RESET */
+
+.settings-reset-btn {
+  color: #71616b;
+  background: #ffffff;
+  border: 1px solid #eadde4;
+}
+
+.settings-reset-btn:hover {
+  color: #f72568;
+  background: #fff0f5;
+  border-color: #f5a5bf;
+}
+
+/* SAVE */
+
+.settings-save-btn {
+  color: #ffffff;
+  background: #f72568;
+  border: 1px solid #f72568;
+  box-shadow: 0 4px 12px rgba(247, 37, 104, 0.14);
+}
+
+.settings-save-btn:hover {
+  background: #d91b57;
+  border-color: #d91b57;
+  box-shadow: 0 7px 17px rgba(247, 37, 104, 0.2);
+}
+
+/* ANIMATIONS */
+
+@keyframes settingsSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes settingsFade {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .settings-form {
+    max-width: 100%;
+  }
+
+  .settings-card {
+    padding: 21px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .settings-page {
+    padding: 12px 5px 22px;
+  }
+
+  .settings-header h1 {
+    font-size: 24px;
+  }
+
+  .settings-header p {
+    font-size: 12px;
+  }
+
+  .settings-header-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+  }
+
+  .settings-card {
+    padding: 17px;
+    border-radius: 12px;
+  }
+
+  .settings-card-heading h2 {
+    font-size: 18px;
+  }
+
+  .settings-form-grid {
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+
+  .settings-field.full-width {
+    grid-column: auto;
+  }
+
+  .settings-field label {
+    font-size: 13px;
+  }
+
+  .settings-actions {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+
+  .settings-actions button {
+    width: 100%;
+  }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  .settings-page *,
+  .settings-page *::before,
+  .settings-page *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
